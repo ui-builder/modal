@@ -5,9 +5,9 @@ use Illuminate\View\Component;
 
 class Basic extends Component
 {
-    public string $background;
+    public ?string $background = null;
 
-    public function __construct(string $background)
+    public function __construct(?string $background = null)
     {
         $this->background = $background;
     }
